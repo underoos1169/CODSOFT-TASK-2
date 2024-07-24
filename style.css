@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-bottom: 5px solid #388E3C;
+}
+.Header h2{
+  margin-bottom: 10px;
+}
+.Header h4{
+  padding: 0px 20px 10px 20px;
+  width: 80vw;
+  text-align: center;
+}
+.About{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.About img{
+  border-radius: 3px;
+  padding-right: 20px;
+}
+.About h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  padding: 5px 20px;
+}
+.Skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e8f5e9;
+  margin: 20px 0;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Skills h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Engineering-Projects,
+.Web-Dev-Projects{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+.Project{
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  height: 380px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.Project:hover{
+  transform: scale(1.1);
+  transform: translateY(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Project .visit-button{
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Project .visit-button:hover{
+  background-color: #388E3C;
+}
+.Project:hover .visit-button{
+  display: block;
+}
+.Title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.Proj-Text{
+  list-style-type: none;
+  padding-left: 0;
+}
+.CV{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e3f2fd;
+  margin: 20px 0;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.CV img{
+  border: 1px solid #90caf9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.CV img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Contacts ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.Contacts a{
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.Contacts a:hover{
+  color: #388E3C;
+}
+.Footer{
+  display: flex;
+  background-color: #333;
+  color: #bbb;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 10pt;
+  align-items: center;
+  justify-content: space-between;
+}
+.Footer ul{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
